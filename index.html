@@ -3,49 +3,40 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>100 PICS Banner met eigen winkelwagen</title>
+<title>100 PICS Banner met winkelwagen in kader</title>
 <style>
   body {
     margin: 0;
-    background-color: #ffe0eb; /* lichtroze achtergrond */
+    background-color: #FFD7E1; /* lichtroze */
     font-family: serif;
   }
   .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: #C6B0F2; /* paarse banner */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c5b1f9; /* paarse banner */
-    padding: 10px 20px;
-    height: 60px;
-  }
-  .logo {
+    padding: 0 25px;
+    box-sizing: border-box;
     color: white;
     font-size: 28px;
-    font-weight: 700;
   }
-  .kader {
+  .logo {
+    font-weight: normal;
+  }
+  .cart-container {
+    background-color: #A084DC; /* paars kader */
     border: 2px solid white;
-    border-radius: 12px;
-    width: 100px;
-    height: 40px;
+    border-radius: 14px;
+    width: 150px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px; /* zorgt dat icoon niet tegen de rand zit */
   }
-  .cart-icon {
-    width: 24px;
-    height: 24px;
-  }
-</style>
-</head>
-<body>
-
-<div class="banner">
-  <div class="logo">100 PICS</div>
-  <div class="kader">
-    <img src="cart_icon.png" alt="winkelwagen" class="cart-icon" />
-  </div>
-</div>
-
-</body>
-</html>
+  .cart
