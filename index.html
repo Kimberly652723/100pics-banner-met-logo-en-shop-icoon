@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 70px;
+    height: 80px; /* iets hoger */
     background-color: #C6B0F2; /* paarse banner */
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,8 @@
     box-sizing: border-box;
     color: white;
     font-size: 28px;
+    z-index: 1000; /* boven alles */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* schaduw */
   }
   .logo {
     font-weight: normal;
@@ -39,4 +41,29 @@
     align-items: center;
     padding: 5px; /* zorgt dat icoon niet tegen de rand zit */
   }
-  .cart
+  .cart-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .content {
+    margin-top: 80px; /* ruimte voor banner */
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <div class="logo">100 PICS</div>
+  <div class="cart-container" aria-label="winkelwagen">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAaJJREFUWIXtl3EOwjAQRNG3gq74fL7RXMrKgb9US3d8gXtTA+G0bzjPRL8hFNTNdpEeTZGzM4h+Nm8bl2lSCXgFTqPCKll5BScqslKl69R+6QLpRLz7EY25x3GOPWWRyQF1neZdcRss8XBdkwML5RGXv9OjExz/ccEt28xpULo+oHO7GdL9TA7BlfZbMhmJq6dQZrzBe7RZBY+eT1pSCDLZUDKvFQKM/0QcvLTFIVFVItLE8NmnxI3zwqlZnPaW2ScdrgLhO9YDb4K6+igfZyBHG2IQDYX1bwWJ5Oby+jUThmY5qvWh3ECXsKvQEtOZssqovSdtmJh6iTxG2zBQZxgZJjxg9xgTjRmH65vTuWAr5B4X/fDwA3FAYq4gvtfhBgAAAABJRU5ErkJggg==" alt="Winkelwagen icoon" class="cart-icon" />
+  </div>
+</div>
+
+<div class="content">
+  <h1>Welkom bij 100 PICS</h1>
+  <p>Hier komt de rest van jouw app-inhoud.</p>
+</div>
+
+</body>
+</html>
